@@ -13,7 +13,7 @@
     },
     {
       "id": "valorant",
-      "nome": "Valorant",
+      "nome": "teste",
       "icone": "<i class='fa-solid fa-crosshairs'></i>",
       "url_principal": "/search/label/Valorant",
       "menus": [
