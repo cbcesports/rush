@@ -1,0 +1,26 @@
+{
+  "jogos": [
+    {
+      "id": "geral",
+      "nome": "Portal RUSH",
+      "icone": "<i class='fa-solid fa-layer-group'></i>",
+      "url_principal": "/",
+      "menus": [
+        { "titulo": "Início", "url": "/", "icone": "fa-solid fa-house" },
+        { "titulo": "Notícias", "url": "/search/label/Noticias", "icone": "fa-solid fa-newspaper" },
+        { "titulo": "Torneios", "url": "/search/label/Torneios", "icone": "fa-solid fa-trophy" }
+      ]
+    },
+    {
+      "id": "valorant",
+      "nome": "Valorant",
+      "icone": "<img src='https://raw.githubusercontent.com/.../valorant-logo.png' width='24'/>",
+      "url_principal": "/search/label/Valorant",
+      "menus": [
+        { "titulo": "Início", "url": "/search/label/Valorant", "icone": "fa-solid fa-house" },
+        { "titulo": "Torneios", "url": "/search/label/Valorant_Torneios", "icone": "fa-solid fa-trophy" },
+        { "titulo": "Equipes", "url": "/search/label/Valorant_Equipes", "icone": "fa-solid fa-users" }
+      ]
+    }
+  ]
+}
