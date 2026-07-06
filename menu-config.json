@@ -13,8 +13,8 @@
     },
     {
       "id": "valorant",
-      "nome": "teste",
-      "icone": "<i class='fa-solid fa-crosshairs'></i>",
+      "nome": "Valorant",
+      "icone": "<img src='https://raw.githubusercontent.com/cbcesports/rush/refs/heads/main/icones/valorant.png'/>",
       "url_principal": "/search/label/Valorant",
       "menus": [
         { "titulo": "Início", "url": "/search/label/Valorant", "icone": "fa-solid fa-house" },
