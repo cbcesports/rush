@@ -14,12 +14,22 @@
     {
       "id": "valorant",
       "nome": "Valorant",
-      "icone": "<img src='https://raw.githubusercontent.com/.../valorant-logo.png' width='24'/>",
+      "icone": "<i class='fa-solid fa-crosshairs'></i>",
       "url_principal": "/search/label/Valorant",
       "menus": [
         { "titulo": "Início", "url": "/search/label/Valorant", "icone": "fa-solid fa-house" },
         { "titulo": "Torneios", "url": "/search/label/Valorant_Torneios", "icone": "fa-solid fa-trophy" },
         { "titulo": "Equipes", "url": "/search/label/Valorant_Equipes", "icone": "fa-solid fa-users" }
+      ]
+    },
+    {
+      "id": "leagueoflegends",
+      "nome": "League of Legends",
+      "icone": "<img src='https://raw.githubusercontent.com/cbcesports/rush/refs/heads/main/icones/lol.png'/>",
+      "url_principal": "/search/label/LeagueOfLegends",
+      "menus": [
+        { "titulo": "Início", "url": "/search/label/LeagueOfLegends", "icone": "fa-solid fa-house" },
+        { "titulo": "Torneios", "url": "/search/label/LoL_Torneios", "icone": "fa-solid fa-trophy" }
       ]
     }
   ]
