@@ -2,6 +2,27 @@
   "id": "valorant",
   "label_busca": "Valorant",
   "breadcrumb_parent": "All Games",
+  "i18n": {
+    "overview": "Overview",
+    "ladder": "Ladder",
+    "archive": "Archive",
+    "tournaments": "Tournaments",
+    "matches_played": "Matches played",
+    "tournaments_held": "Tournaments held",
+    "players": "Players",
+    "search_placeholder": "Search in Tournaments...",
+    "featured_title": "FEATURED TOURNAMENTS",
+    "featured_desc": "Participate in contests and win prizes",
+    "news_title": "LATEST NEWS",
+    "news_desc": "Stay updated with the latest announcements",
+    "btn_tournament": "Join Tournament",
+    "btn_news": "Read Article"
+  },
+  "links": {
+    "overview": "/p/valorant.html",
+    "ladder": "/p/valorant-ladder.html",
+    "archive": "/p/valorant-archive.html"
+  },
   "titulo": "COMPETE IN YOUR FAVOURITE GAMES",
   "descricao": "Compete in epic tournaments on CBC eSports Arena.",
   "capa": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
