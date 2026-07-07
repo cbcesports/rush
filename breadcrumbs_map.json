@@ -1,9 +1,14 @@
 {
-  "breadcrumbs": {
-    "Valorant": { "label": "Valorant", "link": "/p/valorant.html" },
-    "Torneios": { "label": "Torneios", "link": "/p/valorant.html#torneios" },
-    "Noticias": { "label": "Notícias", "link": "/p/valorant.html#noticias" },
-    "Ranking": { "label": "Ranking", "link": "/p/valorant-ladder.html" },
-    "Patrocinado": { "label": "Patrocinado", "link": "/p/parceiros.html" }
+  "valorant": {
+    "parent": { "text": "Valorant", "url": "/p/valorant.html" },
+    "map": {
+      "torneio": { "text": "Torneios", "url": "/p/valorant-torneios.html" },
+      "noticias": { "text": "Notícias", "url": "/p/valorant-noticias.html" },
+      "ranking": { "text": "Ranking", "url": "/p/valorant-ranking.html" }
+    }
+  },
+  "global": {
+    "patrocinado": { "text": "Rush", "url": "/" },
+    "parceiros": { "text": "Rush", "url": "/" }
   }
 }
