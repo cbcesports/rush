@@ -27,7 +27,7 @@
   },
   "titulo": "COMPITA NOS SEUS JOGOS FAVORITOS",
   "descricao": "Alcance o topo nas arenas da CBC eSports.",
-  "capa": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
+  "capa": "https://raw.githubusercontent.com/cbcesports/rush/refs/heads/main/game/valorant.png",
   "portrait": "https://raw.githubusercontent.com/cbcesports/rush/refs/heads/main/rush-icon.png",
   "estatisticas": {
     "membros": "345",
