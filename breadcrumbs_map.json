@@ -1,0 +1,9 @@
+{
+  "breadcrumbs": {
+    "Valorant": { "label": "Valorant", "link": "/p/valorant.html" },
+    "Torneios": { "label": "Torneios", "link": "/p/valorant.html#torneios" },
+    "Noticias": { "label": "Notícias", "link": "/p/valorant.html#noticias" },
+    "Ranking": { "label": "Ranking", "link": "/p/valorant-ladder.html" },
+    "Patrocinado": { "label": "Patrocinado", "link": "/p/parceiros.html" }
+  }
+}
