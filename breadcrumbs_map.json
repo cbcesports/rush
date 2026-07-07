@@ -2,9 +2,16 @@
   "valorant": {
     "parent": { "text": "Valorant", "url": "/p/valorant.html" },
     "map": {
-      "torneio": { "text": "Torneios", "url": "/p/valorant-torneios.html" },
+      "torneio": { "text": "Torneios", "url": "/p/valorant.html" },
       "noticias": { "text": "Notícias", "url": "/p/valorant-noticias.html" },
       "ranking": { "text": "Ranking", "url": "/p/valorant-ranking.html" }
+    }
+  },
+  "csgo": {
+    "parent": { "text": "CS2", "url": "/p/cs2.html" },
+    "map": {
+      "torneio": { "text": "Torneios", "url": "/p/cs2-torneios.html" },
+      "noticias": { "text": "Notícias", "url": "/p/cs2-noticias.html" }
     }
   },
   "global": {
