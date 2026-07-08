@@ -6,8 +6,10 @@
 /* ========================================================
    OVERRIDE DO BLOGGER
    ======================================================== */
-.main-container { padding: 0 !important; background-color: transparent !important; }
-.single-page-wrapper h1.page-section-title { display: none !important; }
+/* Escopado só pra páginas com o hero de jogo (.page-master-wrapper),
+   pra não zerar o padding do main-container no resto do site (footer etc.) */
+.main-container:has(.page-master-wrapper) { padding: 0 !important; background-color: transparent !important; }
+.single-page-wrapper:has(.page-master-wrapper) h1.page-section-title { display: none !important; }
 .post-body { margin: 0 !important; padding: 0 !important; }
 
 /* ========================================================
