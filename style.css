@@ -18,6 +18,23 @@
 @media (max-width: 768px) {
   .main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 20px; padding-right: 20px; }
 }
+
+/* Mesmo motivo do fix acima: nas páginas de jogo o main-container perde o
+   padding, e o footer (que também mora dentro dele) precisa do próprio
+   respiro lateral. As linhas divisórias (laranja/cinza) continuam
+   full-bleed de propósito — só o conteúdo dentro delas ganha o padding. */
+.main-container:has(.page-master-wrapper) .footer-ad-placeholder,
+.main-container:has(.page-master-wrapper) .site-footer,
+.main-container:has(.page-master-wrapper) .footer-bottom-bar {
+  padding-left: 40px; padding-right: 40px; box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .main-container:has(.page-master-wrapper) .footer-ad-placeholder,
+  .main-container:has(.page-master-wrapper) .site-footer,
+  .main-container:has(.page-master-wrapper) .footer-bottom-bar {
+    padding-left: 20px; padding-right: 20px;
+  }
+}
 .single-page-wrapper:has(.page-master-wrapper) h1.page-section-title { display: none !important; }
 .post-body { margin: 0 !important; padding: 0 !important; }
 
