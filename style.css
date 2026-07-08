@@ -11,8 +11,10 @@
 .main-container:has(.page-master-wrapper) { padding: 0 !important; background-color: transparent !important; }
 
 /* A navbar do theme fica dentro desse main-container: como ele perdeu o
-   padding acima, a navbar precisa do próprio respiro lateral aqui. */
-.main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 40px; padding-right: 40px; }
+   padding acima, a navbar precisa do próprio respiro lateral aqui. Também
+   removemos a margem inferior pra ela ficar colada na barra de filtros
+   (sem vão vazio entre as duas). */
+.main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 40px; padding-right: 40px; margin-bottom: 0; }
 @media (max-width: 768px) {
   .main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 20px; padding-right: 20px; }
 }
