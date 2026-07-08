@@ -7,7 +7,7 @@
    OVERRIDE DO BLOGGER
    ======================================================== */
 .main-container { padding: 0 !important; background-color: transparent !important; }
-.single-page-wrapper h1.page-section-title:first-child { display: none !important; }
+.single-page-wrapper h1.page-section-title { display: none !important; }
 .post-body { margin: 0 !important; padding: 0 !important; }
 
 /* ========================================================
@@ -44,16 +44,15 @@
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .filter-bar-left { display: flex; gap: 12px; flex-wrap: wrap; }
-.filter-pill {
-  background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; color: #cbd5e1;
-  padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600;
-  display: flex; align-items: center; gap: 8px; cursor: pointer; white-space: nowrap;
+.filter-select {
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
+  background: rgba(15, 23, 42, 0.6) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2364748b'%3E%3Cpath d='M4 6l4 4 4-4H4z'/%3E%3C/svg%3E") no-repeat right 12px center;
+  border: 1px solid #1e293b; color: #cbd5e1;
+  padding: 8px 32px 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600;
+  font-family: 'Inter', sans-serif; cursor: pointer; white-space: nowrap;
 }
-.filter-pill b { color: #f1f5f9; font-weight: 700; }
-.filter-pill i { color: #64748b; font-size: 10px; }
-.filter-search { background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; padding: 8px 15px; border-radius: 10px; display: flex; align-items: center; gap: 10px; width: 260px; }
-.filter-search i { color: #64748b; }
-.filter-search input { background: transparent; border: none; color: white; width: 100%; outline: none; font-family: 'Inter', sans-serif; font-size: 13px; }
+.filter-select:focus { outline: none; border-color: #eab308; }
+.filter-select option { background: #151e32; color: #f1f5f9; }
 
 /* ========================================================
    ÁREA DE CONTEÚDO INTERNO
@@ -138,7 +137,6 @@
 }
 @media (max-width: 768px) {
   .filter-bar { padding: 12px 20px; justify-content: center; }
-  .filter-search { width: 100%; order: 3; }
   .page-content-inner { padding: 20px; }
   .rush-grid { grid-template-columns: 1fr; }
   .hero-top-row { flex-direction: column; align-items: center; text-align: center; margin: 0 auto 30px auto; }
