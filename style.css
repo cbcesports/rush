@@ -9,6 +9,13 @@
 /* Escopado só pra páginas com o hero de jogo (.page-master-wrapper),
    pra não zerar o padding do main-container no resto do site (footer etc.) */
 .main-container:has(.page-master-wrapper) { padding: 0 !important; background-color: transparent !important; }
+
+/* A navbar do theme fica dentro desse main-container: como ele perdeu o
+   padding acima, a navbar precisa do próprio respiro lateral aqui. */
+.main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 40px; padding-right: 40px; }
+@media (max-width: 768px) {
+  .main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 20px; padding-right: 20px; }
+}
 .single-page-wrapper:has(.page-master-wrapper) h1.page-section-title { display: none !important; }
 .post-body { margin: 0 !important; padding: 0 !important; }
 
