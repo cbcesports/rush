@@ -3,6 +3,15 @@
   "locale": "pt-BR",
   "label_busca": "Valorant",
   "breadcrumb_parent": "Todos os Jogos",
+  "breadcrumb": {
+    "parent": { "text": "Valorant", "url": "/p/valorant.html" },
+    "atual": { "text": "Torneios", "url": "/p/valorant.html" }
+  },
+  "tabs": {
+    "overview": { "text": "Visão Geral", "url": "/p/valorant.html" },
+    "ladder": { "text": "Ranking", "url": "/p/valorant-ladder.html" },
+    "archive": { "text": "Arquivo", "url": "/p/valorant-archive.html" }
+  },
   "label_map": {
     "noticias": "Noticias",
     "torneio": "Torneio",
@@ -30,13 +39,13 @@
     "btn_tournament": "Participar",
     "btn_news": "Ler Matéria"
   },
-  "titulo": "VALORANT",
+  "titulo": "COMPITA NOS SEUS JOGOS FAVORITOS",
   "descricao": "Participe de torneios épicos e compita na Arena CBC eSports.",
   "capa": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
   "avatar": "https://images.unsplash.com/photo-1580327344181-c1163234e5a0?q=80&w=400&auto=format&fit=crop",
   "arte_destaque": "",
   "estatisticas": {
-    "membros": "85",
+    "membros": "345",
     "matches_played": "3200",
     "players_count": "565"
   },
