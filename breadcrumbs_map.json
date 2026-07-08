@@ -5,6 +5,11 @@
       "torneio": { "text": "Torneios", "url": "/p/valorant.html" },
       "noticias": { "text": "Notícias", "url": "/p/valorant-noticias.html" },
       "ranking": { "text": "Ranking", "url": "/p/valorant-ranking.html" }
+    },
+    "tabs": {
+      "overview": { "text": "Visão Geral", "url": "/p/valorant.html" },
+      "ladder": { "text": "Ranking", "url": "/p/valorant-ladder.html" },
+      "archive": { "text": "Arquivo", "url": "/p/valorant-archive.html" }
     }
   },
   "csgo": {
@@ -12,6 +17,11 @@
     "map": {
       "torneio": { "text": "Torneios", "url": "/p/cs2-torneios.html" },
       "noticias": { "text": "Notícias", "url": "/p/cs2-noticias.html" }
+    },
+    "tabs": {
+      "overview": { "text": "Visão Geral", "url": "/p/cs2.html" },
+      "ladder": { "text": "Ranking", "url": "/p/cs2-ladder.html" },
+      "archive": { "text": "Arquivo", "url": "/p/cs2-archive.html" }
     }
   },
   "global": {
