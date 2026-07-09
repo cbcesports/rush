@@ -6,37 +6,38 @@
 /* ========================================================
    OVERRIDE DO BLOGGER
    ======================================================== */
-/* Escopado só pra páginas com o hero de jogo (.page-master-wrapper),
-   pra não zerar o padding do main-container no resto do site (footer etc.) */
-.main-container:has(.page-master-wrapper) { padding: 0 !important; background-color: transparent !important; }
-
-/* A navbar do theme fica dentro desse main-container: como ele perdeu o
-   padding acima, a navbar precisa do próprio respiro lateral aqui. Também
-   removemos a margem inferior pra ela ficar colada na barra de filtros
-   (sem vão vazio entre as duas). */
-.main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 40px; padding-right: 40px; margin-bottom: 0; }
+/* O main-container agora é sempre 0 (ver theme.xml) e quem cuida do
+   próprio respiro é o .single-page-wrapper (padding constante: 40px
+   desktop / 20px tablet / 16px mobile). A página de jogo cancela esse
+   padding com margem negativa equivalente, voltando a ficar full-bleed
+   (a navbar do theme continua de fora do .page-master-wrapper, então
+   ela mantém o padding normal do .single-page-wrapper). */
+.page-master-wrapper { margin: 0 -40px; }
+@media (max-width: 992px) {
+  .page-master-wrapper { margin: 0 -20px; }
+}
 @media (max-width: 768px) {
-  .main-container:has(.page-master-wrapper) .top-nav-bar { padding-left: 20px; padding-right: 20px; }
+  .page-master-wrapper { margin: 0 -16px; }
 }
 
-/* Mesmo motivo do fix acima: nas páginas de jogo o main-container perde o
-   padding, e o footer (que também mora dentro dele) precisa do próprio
-   respiro lateral. As linhas divisórias (laranja/cinza) continuam
-   full-bleed de propósito — só o conteúdo dentro delas ganha o padding. */
-.main-container:has(.page-master-wrapper) .footer-ad-placeholder,
-.main-container:has(.page-master-wrapper) .site-footer,
-.main-container:has(.page-master-wrapper) .footer-bottom-bar {
+/* Navbar colada na barra de filtros (sem vão vazio) só nas páginas de jogo */
+.single-page-wrapper:has(.page-master-wrapper) .top-nav-bar { margin-bottom: 0; }
+
+.single-page-wrapper:has(.page-master-wrapper) h1.page-section-title { display: none !important; }
+.post-body { margin: 0 !important; padding: 0 !important; }
+
+/* Footer (fora do .single-page-wrapper, direto no main-container zerado)
+   cuida do próprio respiro lateral em toda página. As linhas divisórias
+   (laranja/cinza) ficam full-bleed de ponta a ponta de propósito — só o
+   conteúdo dentro delas ganha o padding. */
+.footer-ad-placeholder, .site-footer, .footer-bottom-bar {
   padding-left: 40px; padding-right: 40px; box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  .main-container:has(.page-master-wrapper) .footer-ad-placeholder,
-  .main-container:has(.page-master-wrapper) .site-footer,
-  .main-container:has(.page-master-wrapper) .footer-bottom-bar {
+  .footer-ad-placeholder, .site-footer, .footer-bottom-bar {
     padding-left: 20px; padding-right: 20px;
   }
 }
-.single-page-wrapper:has(.page-master-wrapper) h1.page-section-title { display: none !important; }
-.post-body { margin: 0 !important; padding: 0 !important; }
 
 /* ========================================================
    ESTRUTURA DA PÁGINA SAAS
