@@ -6,12 +6,12 @@
 /* ========================================================
    OVERRIDE DO BLOGGER
    ======================================================== */
-/* O main-container agora é sempre 0 (ver theme.xml) e quem cuida do
-   próprio respiro é o .single-page-wrapper (padding constante: 40px
-   desktop / 20px tablet / 16px mobile). A página de jogo cancela esse
-   padding com margem negativa equivalente, voltando a ficar full-bleed
-   (a navbar do theme continua de fora do .page-master-wrapper, então
-   ela mantém o padding normal do .single-page-wrapper). */
+/* main-container é sempre 0 (ver theme.xml). Cada bloco cuida do próprio
+   respiro: navbar tem padding próprio, .post-body-content tem padding
+   próprio (40px desktop / 20px tablet / 16px mobile) pro conteúdo normal
+   de post/página. A página de jogo cancela o padding do .post-body-content
+   com margem negativa equivalente, voltando a ficar full-bleed (a navbar
+   do theme fica FORA do .page-master-wrapper, então não é afetada). */
 .page-master-wrapper { margin: 0 -40px; }
 @media (max-width: 992px) {
   .page-master-wrapper { margin: 0 -20px; }
